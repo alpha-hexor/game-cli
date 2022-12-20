@@ -9,7 +9,7 @@ client = httpx.Client(headers={'user-agent':'uwu'})
 GAME_REGEX = r'href="https://crotorrents.com/(.*?)-torrent-(.*?)download/"'
 REQUIREMENT = r"<strong>(.*)</strong>(.*)</li>"
 MAGNET = r"magnet:\?xt=urn:btih:[a-zA-Z0-9]*"
-TORRENT_CREDS = "admin:admin123456"
+TORRENT_CREDS = "admin:adminadmin"
 savepath = f"{os.getcwd()}\\downlaods"
 
 try:
