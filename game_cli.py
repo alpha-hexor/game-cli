@@ -2,6 +2,7 @@ import httpx
 import re
 import os
 from torrent import Torrent as t
+
 #global shit
 MAIN_URL = "https://crotorrents.com"
 MAX_PAGE = 11
@@ -16,6 +17,8 @@ try:
     os.mkdir(savepath)
 except:
     pass
+
+
 m=t()
 
 game_links = []
