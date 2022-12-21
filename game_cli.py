@@ -46,7 +46,7 @@ game_name , keyword = game_links[x-1]
 r=client.get(f"{MAIN_URL}/{game_name}-torrent-{keyword}download/")
 requirements = re.findall(REQUIREMENT,r.text)
 
-print("========System Requirements=========")
+print("\n\n========System Requirements=========")
 for req in requirements:
     print(f"{req[0]} {req[1]}")
     
@@ -54,11 +54,11 @@ magnet=re.findall(MAGNET,r.text)[0]
 
 if(m.login(username=TORRENT_CREDS.split(":")[0],password=TORRENT_CREDS.split(":")[-1])):
     if(m.add_link(magnet_link=magnet,save_path=savepath)):
-        print("[*]Game is added to the torrrent to the successfully")
+        print("[*]Game is added to the torrrent successfully")
     else:
         print("[-]Can't add to the torrent")
 else:
-    print("[-]Please check creds and try again")
+    print("[-]Please check torrent creds and try again")
     exit()
     
     

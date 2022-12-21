@@ -27,7 +27,7 @@ class Torrent:
             else:
                 return 0
         except:
-            print("[*]Please qbit torrent first")
+            print("[*]Please open qbit torrent first or enable webui")
             exit()
             
     def add_link(self,magnet_link,save_path):
